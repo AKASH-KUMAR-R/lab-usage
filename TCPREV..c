@@ -115,7 +115,7 @@ int main() {
 
     }
 
-    if ( (clientDescriptor = accept( socketDescriptor, (struct sockaddr*)&serverAddress, &serverAddrLen ) < 0) {
+    if ( (clientDescriptor = accept( socketDescriptor, (struct sockaddr*)&serverAddress, &serverAddrLen ) ) < 0) {
 
         printf("\nFailed to accept incomming connections");
         exit(1);
